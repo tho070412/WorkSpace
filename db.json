@@ -1,0 +1,40 @@
+{
+  "tareas": [
+    {
+      "id": "1",
+      "titulo": "Diseñar pantalla de inicio",
+      "descripcion": "Crear mockups en Figma para la pantalla principal.",
+      "fechaVencimiento": "2026-05-28",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2",
+      "titulo": "Integrar API de pagos",
+      "descripcion": "Conectar Stripe con el backend de la aplicación.",
+      "fechaVencimiento": "2026-05-25",
+      "estado": "En Progreso"
+    },
+    {
+      "id": "3",
+      "titulo": "Escribir pruebas unitarias",
+      "descripcion": "Cubrir al menos el 80% del código con Jest.",
+      "fechaVencimiento": "2026-05-23",
+      "estado": "Completada"
+    },
+    {
+      "id": "4",
+      "titulo": "Revisar pull requests pendientes",
+      "descripcion": "Hay 3 PRs esperando revisión en GitHub.",
+      "fechaVencimiento": "2026-05-22",
+      "estado": "Pendiente"
+    },
+    {
+      "titulo": "nada",
+      "descripcion": "xxxxx",
+      "fechaVencimiento": "2026-05-21",
+      "estado": "En Progreso",
+      "id": "aZeZfYU9SK0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
