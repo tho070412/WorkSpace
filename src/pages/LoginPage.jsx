@@ -106,9 +106,9 @@ export default function LoginPage() {
         </div>
 
         <p className="text-center text-muted text-xs mt-4">
-          Prueba Técnica Frontend Junior — 2026
+          
         </p>
       </div>
     </div>
   )
-}
+} 
