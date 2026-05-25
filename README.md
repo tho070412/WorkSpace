@@ -62,7 +62,7 @@ cd workspace
 npm install
 ```
 
-const BASE_URL = 'http://localhost:3002/tareas' 
+const BASE_URL = 'https://workspace-api-7v93.onrender.com/tareas'
 
 ```bash
 npm run dev
