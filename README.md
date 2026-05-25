@@ -1,16 +1,97 @@
-# React + Vite
+# Workspace — Gestor de Tareas y Productividad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web SPA desarrollada en React para gestionar las tareas diarias de un equipo de trabajo, con seguimiento de progreso y organización por estados.
 
-Currently, two official plugins are available:
+## 🚀 Demo en producción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Stack tecnológico
 
-## React Compiler
+| Tecnología | Uso |
+|---|---|
+| React 18 + Vite | Framework y bundler |
+| react-router-dom v6 | Enrutamiento SPA |
+| Tailwind CSS v3 | Estilos |
+| SweetAlert2 | Alertas y confirmaciones |
+| Axios | Peticiones HTTP |
+| MockAPI | API REST simulada |
+| LocalStorage | Persistencia de sesión |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Estructura del recurso `tareas`:
+
+| Campo | Tipo |
+|---|---|
+| `titulo` | String |
+| `descripcion` | String |
+| `fechaVencimiento` | String |
+| `estado` | String (`Pendiente` / `En Progreso` / `Completada`) |
+
+## 📁 Estructura del proyecto
+
+```
+src/
+├── components/
+│   ├── FilterBar.jsx
+│   ├── Modal.jsx
+│   ├── Navbar.jsx
+│   ├── ProtectedRoute.jsx
+│   ├── Spinner.jsx
+│   ├── StatsBar.jsx
+│   ├── TaskCard.jsx
+│   └── TaskForm.jsx
+├── hooks/
+│   └── useTareas.js
+├── layouts/
+│   └── DashboardLayout.jsx
+├── pages/
+│   ├── LoginPage.jsx
+│   └── TableroPage.jsx
+├── services/
+│   └── tareasService.js
+└── utils/
+    ├── auth.js
+    └── helpers.js
+```
+
+## ⚙️ Instalación local
+
+```bash
+git clone https://github.com/tho070412/WorkSpace.git
+cd workspace
+npm install
+```
+
+const BASE_URL = 'http://localhost:3002/tareas' 
+
+```bash
+npm run dev
+```
+
+## ✨ Funcionalidades
+
+- 🔐 Login con nombre + departamento (LocalStorage)
+- 🛡️ Rutas protegidas
+- 📋 Listado de tareas con tarjetas
+- ➕ Crear tarea con validación
+- ✏️ Editar tarea completa
+- ⚡ Cambio rápido de estado (Pendiente → En Progreso → Completada)
+- 🗑️ Eliminar con confirmación SweetAlert2
+- 📊 Estadísticas + barra de progreso general
+- 🔍 Filtros por estado
+- ⚠️ Indicador visual de tareas vencidas
+- ⏳ Spinner durante peticiones
+- 📱 Diseño responsivo
+
+## 🌿 GitFlow
+
+```
+main → develop → feature/login-component
+                → feature/task-crud
+                → feature/ui-improvements
+               → feature/style-adjustments
+```
+
+## 👤 Autor
+
+Thomas Rodriguez Londoño
