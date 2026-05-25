@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-// ⚠️ Reemplaza con tu URL de MockAPI
 const BASE_URL = 'http://localhost:3002/tareas'
 
 const api = axios.create({
